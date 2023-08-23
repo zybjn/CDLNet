@@ -1,4 +1,4 @@
-# CLCANet
-The code of Remote Sensing Scene Image Classification Using Cross-Level Component Attention Network
+# CDLNet
+The code of CDLNet: Collaborative Dictionary Learning Network for Remote Sensing Image Scene Classification
 
 We will upload the code after review.
