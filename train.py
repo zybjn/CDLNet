@@ -106,16 +106,6 @@ def main(args):
             print("maxacc=", max_acc)
         adjust_learning_rate(optimizer, epoch)
 
-def setup_seed(seed=0):
-    os.environ['PYTHONHASHSEED'] = str(seed)
-    torch.manual_seed(seed)
-    torch.cuda.manual_seed(seed)
-    torch.cuda.manual_seed_all(seed)
-    numpy.random.seed(seed)
-    random.seed(seed)
-    torch.backends.cudnn.deterministic = True
-    torch.backends.cudnn.benchmark = True
-    print("seed=", seed)
 
 
 if __name__ == '__main__':
@@ -123,10 +113,8 @@ if __name__ == '__main__':
     parser.add_argument('--num_classes', type=int, default=30)
     parser.add_argument('--epochs', type=int, default=100)
     parser.add_argument('--batch-size', type=int, default=64)
-    parser.add_argument('--seed', type=int, default=2)
     parser.add_argument('--device', default='cuda:0', help='device id (i.e. 0 or 0,1 or cpu)')
     parser.add_argument('--data-path', type=str,
                         default="data/AID")
     opt = parser.parse_args()
-    setup_seed(opt.seed)
     main(opt)
