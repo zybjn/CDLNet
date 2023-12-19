@@ -14,8 +14,8 @@ Here are some tips for running EMSCNet:
   journal={IEEE Transactions on Geoscience and Remote Sensing}, 
   title={CDLNet: Collaborative Dictionary Learning Network for Remote Sensing Image Scene Classification}, 
   year={2023},
-  volume={},
+  volume={61},
   number={},
-  pages={1-1},
+  pages={1-16},
   doi={10.1109/TGRS.2023.3336471}}
 ```
